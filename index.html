@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.1.7/css/fork-awesome.min.css" integrity="sha512-9QjPqX/aCNwEQDyMqqMluNOSsHxTwOJNO3d4m5aUeNbyOPm8RcBA5hCUhvGmKFtSmQYGajqPopGtD60FWiWUwg==" crossorigin="anonymous" />
+    <title>Todo List</title>
+
+</head>
+
+<body>
+
+    <header class='header'>
+        <h1>My Todo List</h1>
+    </header>
+
+    <form class='field'>
+
+        <input class='input' id='input' type='text' placeholder='Enter item'>
+        <div class='button' id='button' tabindex='0'>
+            <i class="fa fa-plus-square"></i>
+        </div>
+
+        <select class='select' id='select'>
+            <option value='all'>All</option>
+            <option value='completed'>Completed</option>
+            <option value='uncompleted'>Uncompleted</option>
+        </select>
+
+    </form>
+
+    <div class="container">
+        <ul id='list'></ul>
+    </div>
+
+    <script src='app.js'></script>
+
+</body>
+
+</html>
